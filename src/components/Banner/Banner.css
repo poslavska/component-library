@@ -1,0 +1,98 @@
+.banner {
+    display: flex;
+    font-size: 0.875rem;
+    padding: 1.14em;
+    font-family: Inter, sans-serif;
+    gap: 0.86em;
+    max-width: 896px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.banner-center {
+    justify-content: center;
+}
+
+.banner-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.banner-title {
+    font-weight: 500;
+    max-width: 830px;
+}
+
+.banner-text {
+    font-weight: 400;
+    max-width: 830px;
+    line-height: 1.25rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.banner svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.success {
+    background-color: #ECFDF5;
+}
+
+.success-title {
+    color: #065F46;
+}
+
+.success-text {
+    color: #047857;
+}
+
+.success-icon {
+    color: #34D399;
+}
+
+.warning {
+    background-color: #FFFBEB;
+}
+
+.warning-title, .error-title {
+    color: #92400E;
+}
+
+.warning-text, .error-text {
+    color: #B45309;
+}
+
+.warning-icon {
+    color: #FBBF24;
+}
+
+.error {
+    background-color: #FEF2F2;
+}
+
+.error-icon {
+    color: #F87171;
+}
+
+.info {
+    background-color: #EFF6FF;
+}
+
+.info-title {
+    color: #1E40AF;
+}
+
+.info-text {
+    color: #1C51B9;
+}
+
+.info-icon {
+    color: #60A5FA;
+}

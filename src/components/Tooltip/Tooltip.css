@@ -1,0 +1,184 @@
+.tooltip {
+    display: flex;
+    align-items: flex-start;
+    padding: 1em;
+    box-sizing: border-box;
+    max-width: 370px;  
+    font-family: Inter, sans-serif;  
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--tooltip-bg, #1E40AF);
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 34px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 14px solid var(--tooltip-bg, #1E40AF);
+  }
+
+.tooltip-icon, .tooltip-react svg {
+    width: 19px;
+    height: 100%;
+    flex-shrink: 0; 
+}
+
+.tooltip-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.75em;
+    gap: 0.25em;
+}
+
+.tooltip-title {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.tooltip-title, .tooltip-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.tooltip-text {
+    font-weight: 400;
+}
+
+.tooltip-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.tooltip-close svg {
+    width: 18px;
+    height: 100%;
+}
+
+/* tooltip theme-styles (colors) */
+/* black */
+.black-bold {
+    background-color: #262626;
+}
+
+.black-bold .tooltip-icon,
+.black-bold .tooltip-react,
+.tooltip-text-black-bold,
+.black-bold .tooltip-close {
+    color: #C7C7C7;
+}
+
+.black-light {
+    background-color: #FFFFFF;
+}
+
+.tooltip-title-black-light {
+    color: #111827;
+}
+
+.black-light .tooltip-icon,
+.black-light .tooltip-react,
+.tooltip-text-black-light,
+.black-light .tooltip-close {
+    color: #6B7280;
+}
+
+/* blue */
+.blue-bold {
+    background-color: #1E40AF;
+}
+
+.blue-bold .tooltip-icon,
+.blue-bold .tooltip-react {
+    color: #7EA6F2;
+}
+
+.tooltip-text-blue-bold {
+    color: #E8EDFF;
+}
+
+.blue-bold .tooltip-close,
+.pink-bold .tooltip-close,
+.green-bold .tooltip-close {
+    color: #D8D8D8;
+}
+
+.blue-light {
+    background-color: #E0E7FF;
+}
+
+.blue-light .tooltip-icon,
+.blue-light .tooltip-react,
+.tooltip-text-blue-light,
+.blue-light .tooltip-close {
+    color: #1C51B9;
+}
+
+.tooltip-title-blue-light {
+    color: #1E40AF;
+}
+
+/* pink */
+.pink-bold {
+    background-color: #A9229B;
+}
+
+.pink-bold .tooltip-icon,
+.pink-bold .tooltip-react {
+    color: #F462E6;
+}
+
+.tooltip-text-pink-bold {
+    color: #FFE9FD;
+}
+
+.pink-light {
+    background-color: #FFF3FC;
+}
+
+.pink-light .tooltip-icon,
+.pink-light .tooltip-react,
+.tooltip-text-pink-light,
+.pink-light .tooltip-close {
+    color: #C7369E;
+}
+
+.tooltip-title-pink-light {
+    color: #A9229B;
+}
+
+/* green */
+.green-bold {
+    background-color: #47AA5D;
+}
+
+.green-bold .tooltip-icon,
+.green-bold .tooltip-react {
+    color: #C1FFCF;
+}
+
+.tooltip-text-green-bold {
+    color: #E3FFE9;
+}
+
+.green-light {
+    background-color: #E7FFF3;
+}
+
+.tooltip-text-green-light,
+.green-light .tooltip-close {
+    color: #3C8C4E;
+}
+
+.tooltip-title-green-light {
+    color: #137A2A;
+}
+
+.green-light .tooltip-icon,
+.green-light .tooltip-react {
+    color: #41A557;
+}

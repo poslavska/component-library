@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e2e7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    gap: 2em;
+}
+
+.badges, .banners {
+    display: flex;
+    gap: 1em;
+}
+
+.badges {
+    flex-direction: column;
+}
+
+.badges-inner {
+    display: flex;
+    gap: 0.25em;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.app-text {
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.banners {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.tooltips {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.75em;
+}
+
+@media (min-width: 600px) {
+    .badges {
+        flex-direction: row;
+        gap: 1.5em;
+    }
+
+    .badges-inner {
+        gap: 0.5em;
+    }
+}
+
+@media (min-width: 910px) {
+    .testimonials {
+        gap: 4.25em;
+        margin-bottom: 2.5em;
+    }
+}

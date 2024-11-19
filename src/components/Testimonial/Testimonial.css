@@ -1,0 +1,85 @@
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: Inter, sans-serif;
+    color: #111827;
+    box-sizing: border-box;
+    padding: 4.5em 0.5em;
+    background-color: #F9FAFB;
+    background-image: url("../../assets/dot-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.testimonial-logo {
+    display: flex;
+    align-items: end;
+    gap: 0.6875em;
+    margin: 0 auto 2.5em auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-company-logo {
+    width: 44px;
+    height: 29px;
+}
+
+.testimonial-company {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+.testimonial-text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1.33em;
+}
+
+.testimonial-person {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.testimonial-title {
+    color: #6B7280;
+}
+
+@media (min-width: 340px) {
+    .testimonial {
+        padding: 4.5em 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .testimonial {
+        align-items: center;
+        text-align: center;
+        background-image: url("../../assets/dot-pattern-desktop.svg");
+        width: 100%;
+    }
+
+    .testimonial-person {
+        flex-direction: row;
+    }
+
+    .testimonial-name::after {
+        content: "/";
+        color: #2E59F3;
+        font-weight: 700;
+        margin: 0 0.375em;;
+    }
+
+    .testimonial-text {
+        max-width: 770px;
+    }
+}  
