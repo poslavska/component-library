@@ -1,11 +1,9 @@
-import { useState } from 'react'
 import Badge from './components/Badge/Badge'
 import Banner from './components/Banner/Banner'
 import Card from './components/Card/Card'
 import TestimonialPhoto from './components/Testimonial/TestimonialPhoto'
 import Testimonial from './components/Testimonial/Testimonial'
 import Tooltip from './components/Tooltip/Tooltip'
-import { FaRegQuestionCircle } from "react-icons/fa";
 
 import './index.css'
 import './assets/fonts.css'
